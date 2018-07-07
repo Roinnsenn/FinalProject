@@ -54,14 +54,10 @@
 ######      if (yellowball == count){
 ######        img1 = loadImage("win.jpg");
 ######        image(img1,300,200);
-######        //textSize(32);
-######        //text("win", 10, 30); 
 ######      }
 ######      else{
 ######        img2 = loadImage("lose.jpg");
 ######        image(img2,350,275);
-######        //textSize(32);
-######        //text("lose",10,30);
 ######      }
 ######      fill(0, 102, 153);
 ######      noLoop();
