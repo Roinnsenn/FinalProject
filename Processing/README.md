@@ -15,7 +15,7 @@
 ######   background(0);
 ######     float R = random(5,10);
 ######     int X = (int)random(0,9);
-######     if (millis() < 10500){
+######     if (millis() < 60500){
 ######       if (X != 0){
 ######         yellowball++;
 ######         fill(255,255,0);
