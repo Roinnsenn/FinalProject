@@ -1,6 +1,7 @@
 ###### import processing.serial.*;
 ###### Serial myPort = new Serial(this, "/dev/cu.usbmodem14341", 9600);
-###### PImage img1,img2;
+###### PImage img1,img2,img3;
+###### boolean flag = false;
 
 ###### int yellowball = 0;
 ###### int count = 0;
@@ -11,7 +12,14 @@
 ######  background(0);
 ###### }
 
+###### void mousePressed(){
+######   flag = true;
+###### }
+
 ###### void draw(){
+###### img3 = loadImage("giphy.gif");
+######         image(img3,350,250);
+######   if (flag==true){
 ######   background(0);
 ######     float R = random(5,10);
 ######     int X = (int)random(0,9);
@@ -62,5 +70,5 @@
 ######      fill(0, 102, 153);
 ######      noLoop();
 ######   }
-  
+######  }  
 ###### }
